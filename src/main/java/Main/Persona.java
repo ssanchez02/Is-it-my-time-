@@ -3,27 +3,21 @@
  */
 package Main;
 
+import java.util.Date;
+
 /**
  *
  * @author Sebastián Sanchez y Matias Vega
  */
 public class Persona {
-    private String rut;
+
     private String nombre;
-    private String hora;
+    private String rut;
+    private Date horaDeAtencion;
 
-    public Persona(String rut, String nombre, String hora) {
-        this.rut = rut;
+    public Persona(String nombre, Date horaDeAtencion) {
         this.nombre = nombre;
-        this.hora = hora;
-    }
-
-    public String getRut() {
-        return rut;
-    }
-
-    public void setRut(String rut) {
-        this.rut = rut;
+        this.horaDeAtencion = horaDeAtencion;
     }
 
     public String getNombre() {
@@ -34,13 +28,20 @@ public class Persona {
         this.nombre = nombre;
     }
 
-    public String getHora() {
-        return hora;
+    public Date getHoraDeAtencion() {
+        return horaDeAtencion;
     }
 
-    public void setHora(String hora) {
-        this.hora = hora;
+    public void setHoraDeAtencion(Date horaDeAtencion) {
+        this.horaDeAtencion = horaDeAtencion;
     }
-    
-    
+
+    public String getRut() {
+        return rut;
+    }
+
+    public void setRut(String rut) {
+        this.rut = rut;
+    }
+
 }
